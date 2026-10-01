@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoboISC - Club de Robótica</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Bootstrap 5.3 CSS (Requerido por la práctica) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 1. ENCABEZADO Y NAVBAR RESPONSIVO -->
+  <header>
+    <!-- Banner Responsivo -->
+    <div class="container-fluid p-0 text-center bg-dark text-white py-4">
+      <img src="Imagenes/banner1.jpeg" class="img-fluid rounded" style="max-height: 200px;" alt="Banner RoboISC">
+      <h1 class="mt-2 font-weight-bold">RoboISC</h1>
+    </div>
+
+    <!-- Navbar Bootstrap 5 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#!">RoboISC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#areas">Áreas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#componentes">Componentes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- 2. SLIDER DE 5 IMÁGENES (Puro CSS sin JS: d-flex flex-nowrap overflow-x-auto) -->
+    <section id="inicio" class="mb-5">
+      <h2 class="mb-4 text-center">Prototipos y Torneos</h2>
+      <div class="d-flex flex-nowrap overflow-x-auto gap-3 pb-3">
+        <img src="Imagenes/slide-1.jpg" class="rounded-3 shadow-sm img-fluid" style="min-width: 300px; height: 200px; object-fit: cover;" alt="Placa Arduino">
+        <img src="Imagenes/slide-2.jpg" class="rounded-3 shadow-sm img-fluid" style="min-width: 300px; height: 200px; object-fit: cover;" alt="Brazo Robótico">
+        <img src="Imagenes/slide-3.jpg" class="rounded-3 shadow-sm img-fluid" style="min-width: 300px; height: 200px; object-fit: cover;" alt="Hackathon Alumnos">
+        <img src="Imagenes/slide-4.jpg" class="rounded-3 shadow-sm img-fluid" style="min-width: 300px; height: 200px; object-fit: cover;" alt="Torneo de Robótica">
+        <img src="Imagenes/slide-5.jpg" class="rounded-3 shadow-sm img-fluid" style="min-width: 300px; height: 200px; object-fit: cover;" alt="Prototipo Sensor">
+      </div>
+    </section>
+
+    <!-- 3. GALERÍA DE PROYECTOS DESTACADOS (Grid con 6 imágen/Cards) -->
+    <section id="proyectos" class="mb-5">
+      <h2 class="mb-4 text-center">Proyectos Destacados</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagenes/proyecto1.jpg" class="card-img-top img-fluid" alt="Bastón inteligente">
+            <div class="card-body">
+              <h5 class="card-title">Bastón Inteligente</h5>
+              <p class="card-text">Sistema ultrasónico para auxilio a personas con discapacidad visual.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagenes/proyecto2.jpg" class="card-img-top img-fluid" alt="Robot seguidor de línea">
+            <div class="card-body">
+              <h5 class="card-title">Robot Seguidor de Línea</h5>
+              <p class="card-text">Vehículo autónomo de alta velocidad para competencias robóticas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagenes/proyecto3.jpg" class="card-img-top img-fluid" alt="Invernadero automatizado">
+            <div class="card-body">
+              <h5 class="card-title">Invernadero Automatizado</h5>
+              <p class="card-text">Control de riego, temperatura y humedad mediante IoT.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagenes/proyecto4.jpg" class="card-img-top img-fluid" alt="Brazo Articulado">
+            <div class="card-body">
+              <h5 class="card-title">Brazo Articulado</h5>
+              <p class="card-text">Manipulador robótico impreso en 3D controlado por servomotores.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagenes/proyecto5.jpg" class="card-img-top img-fluid" alt="Dron de Reconocimiento">
+            <div class="card-body">
+              <h5 class="card-title">Dron de Reconocimiento</h5>
+              <p class="card-text">Cuadricóptero equipado con cámara e IA básica de procesamiento visual.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <img src="Imagenes/proyecto6.jpg" class="card-img-top img-fluid" alt="Rover de Exploración">
+            <div class="card-body">
+              <h5 class="card-title">Rover de Exploración</h5>
+              <p class="card-text">Vehículo todoterreno con transmisión inalámbrica de telemetría.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. INVENTARIO BÁSICO DE TRABAJO (Tabla Responsiva) -->
+    <section id="componentes" class="mb-5">
+      <h2 class="mb-4 text-center">Inventario Básico de Trabajo</h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Componente</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Uso Principal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Raspberry Pi 4</td>
+              <td>10 unidades</td>
+              <td>Procesamiento central y proyectos con visión artificial.</td>
+            </tr>
+            <tr>
+              <td>Sensores Ultrasónicos HC-SR04</td>
+              <td>25 unidades</td>
+              <td>Medición de distancia y detección de obstáculos.</td>
+            </tr>
+            <tr>
+              <td>Motores Servos MG996R</td>
+              <td>18 unidades</td>
+              <td>Control preciso de movimiento en brazos robóticos.</td>
+            </tr>
+            <tr>
+              <td>Módulos Arduino Uno R3</td>
+              <td>30 unidades</td>
+              <td>Prototipado rápido y control de sensores de bajo nivel.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 5. PIE DE PÁGINA (Footer) -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <h5>Club de Robótica RoboISC</h5>
+          <p class="mb-1">Laboratorio de Sistemas Computacionales / Robótica</p>
+          <p class="mb-0">Contacto: contacto@roboisclab.edu.mx</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="mb-1">Ingeniería en Sistemas Computacionales</p>
+          <p class="mb-0">TESCO - Tecnológico de Estudios Superiores de Coacalco</p>
+        </div>
+      </div>
+      <hr class="my-3 border-secondary">
+      <div class="text-center">
+        <p class="mb-0 small">&copy; 2026 RoboISC. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap 5.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
